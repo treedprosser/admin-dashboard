@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.sidebar {
+    background-color: #3b82f6;
+    grid-column: 1 / 2;
+    grid-row: span 2;
+    color: white;
+}
+
+.sidebar > div {
+    padding-left: 40px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.title > h1 > img {
+    position: relative;
+    top: 4px;
+    margin-right: 10px;
+}
+
+.sidebar > div > ul > li{
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.sidebar > div > ul > li > img {
+    position: relative;
+    top: 4px;
+    margin-right: 10px;
+}
+
+.header {
+    background-color: #eff6ff;
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    padding: 15px;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.search>img {
+    justify-self: end;
+    margin-right: 10px;
+}
+
+.search>input {
+    border: none;
+    border-radius: 20px;
+    padding-left: 20px;
+    height: 35px;
+    width: 600px;
+    background-color: #60a5fa;
+}
+
+.user {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr 2fr;
+    align-items: center;
+}
+
+.user>img {
+    justify-self: end;
+}
+
+.profile {
+    justify-self: center;
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    background-color: #4338ca;
+    color: #ffffff;
+}
+
+.user>h3 {
+    justify-self: start;
+}
+
+.greeting {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+}
+
+.greeting > .profile {
+    justify-self: end;
+    margin-right: 15px;
+    font-size: 26px;
+    padding: 15px;
+}
+
+.user-greeting > p {
+    font-weight: bold;
+}
+
+.user-greeting > h3 {
+    font-size: 1.8rem;
+}
+
+.buttons {
+    display: grid;
+    align-items: center;
+}
+
+.buttons > ul {
+    display: flex;
+}
+
+.buttons > ul > li > button {
+    border: none;
+    background-color: #1d4ed8;
+    border-radius: 25px;
+    padding: 8px 30px;
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-right: 30px;
+}
+
+.main {
+    background-color: #bfdbfe;
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 20px;
+}
+
+.projects,
+.news {
+    padding: 10px;
+}
+
+.projects > h2,
+.announcements > h2,
+.trending > h2 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    border-left: 10px solid #f97316;
+    border-radius: 10px;
+    background-color: #ffffff;
+    height: 180px;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+}
+
+.project-buttons > ul {
+    display: flex;
+    justify-content: end;
+}
+
+.project-buttons > ul > li {
+    padding: 10px;
+}
+
+.announcements-cards {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin-bottom: 40px;
+}
+
+.announcements-cards > div {
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 20px;
+}
+
+.announcements-cards :nth-child(3) {
+    border: none;
+    margin-bottom: 0px;
+}
+
+.announcements-cards > div > p {
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+}
+
+.trending-cards {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.trending-profile {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    padding: 5px;
+    align-items: center;
+}
+
+.trending-profile > .text {
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+.project-name {
+    color: #9ca3af;
+}
+
+#JW {
+    background-color: #14b8a6;
+}
+
+#TM {
+    background-color: #6366f1;
+}
+
+#PM {
+    background-color: #64748b;
+}
